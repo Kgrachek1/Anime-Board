@@ -5,7 +5,7 @@ const passport = require('passport');
 // This app has no "home" page, 
 // but your projects should 😀
 router.get('/', function(req, res, next) {
-  res.redirect('/users');
+  res.redirect('/animes');
 });
 
 router.get('/auth/google', passport.authenticate(
@@ -21,16 +21,16 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect: '/home',
+    successRedirect: '/animes',
     // Change to what's best for YOUR app
-    failureRedirect: '/users'
+    failureRedirect: '/animes'
   }
 ));
 
 router.get('/logout', function(req, res) {
   req.logout(function() {
     // Change path for your "landing" page
-    res.redirect('/');
+    res.redirect('/animes');
   });
 });
 

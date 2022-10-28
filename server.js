@@ -9,10 +9,13 @@ var methodOverride = require('method-override');
 
 require('dotenv').config();
 require('./config/database');
+require('./config/passport');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var app = express();
+var indexRouter = require('./routes/index');
+var animeRouter = require('./routes/animes');
+var reviewsRouter = require('./routes/reviews');
+var creatorsRouter = require('./routes/creators');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -40,7 +43,9 @@ app.use(function(req, res, next) {
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/animes', animeRouter);
+app.use('/', reviewsRouter);
+app.use('/', creatorsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
