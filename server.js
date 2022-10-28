@@ -3,9 +3,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var methodOverride = require('method-override');
+
+require('dotenv').config();
+require('./config/database');
 
 var app = express();
 
