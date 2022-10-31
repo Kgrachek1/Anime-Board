@@ -1,18 +1,15 @@
-<%- include('../partials/header') %>
-
-<div>Before adding, please ensure that the Performer is not in the following list:</div>
-<section id="badge-container">
-  <% performers.forEach(function(p) { %>
-    <article class="badge"><%= p.name %></article>
-  <% }) %>
-</section>
-
-<form id="add-performer-form" action="/performers" method="POST">
-  <label>Name:</label>
-  <input type="text" name="name">
-  <label>Born:</label>
-  <input type="date" name="born">
-  <input type="submit" value="Add Performer">
-</form>
-
-<%- include('../partials/footer') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Post an Anime</title>
+    <nav><button><a href="./animes"></a></button></a></nav>
+</head>
+<body>
+   Content and Posting Page
+   
+</body>
+</html>
