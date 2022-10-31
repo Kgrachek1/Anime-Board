@@ -4,52 +4,37 @@
   color: #424748;
 }
 
+.kevins-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: stretch;
+}
+
+.kevins-row > * {
+  flex-basis: 20rem;
+  flex-shrink: 0;
+}
+
+.kevins-row .card {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.kevins-row .card > .card-content {
+  flex-grow: 1;
+}
+
+.kevins-row .card > .card-image {
+  flex-basis: 25rem;
+  flex-shrink: 0;
+  overflow-y: hidden;
+  background-color: grey;
+}
+
 body {
   margin: 0;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 50px 1fr;
-  background-color:rgb(233, 231, 228);
-  display: flex;
-  box-sizing: border-box;
-  justify-content: space-evenly;
-  grid-template-areas: 
-    "nav"
-    "main"
-}
-
-body > nav {
-  grid-area: nav;
-  background-color: #4020f7;
-  display: flex;
-  box-sizing:content-box;
-  justify-content: top;
-  align-items: center;
-}
-
-nav > img {
-  width: 34px;
-  object-fit: contain;
-  margin-right: auto;
-}
-h1 {
-  text-align: center;
-}
-p {
-  text-align: center;
-}
-
-
-
-button {
-  background-color: cyan;
- 
-}
-
-#anime {
-  display:inline-flex;
-  justify-content: space-around;
-  height: 30%;
-  width: 90%;
-  
+  overflow-x: hidden;
 }
