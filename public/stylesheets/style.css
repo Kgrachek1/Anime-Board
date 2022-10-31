@@ -34,3 +34,12 @@ h1 {
 p {
   text-align: center;
 }
+
+nav {
+  display:flex;
+  justify-content: space-between;
+}
+button {
+  background-color: cyan;
+ 
+}

@@ -8,7 +8,7 @@ const ensureLoggedIn = require('../config/auth');
 // GET /performers/new
 router.get('/creators/new', ensureLoggedIn, creatorsCtrl.new);
 // POST /performers
-router.post('/creators', ensureLoggedIn, creatorsCtrl.create);
+router.post('/creators/new', ensureLoggedIn, creatorsCtrl.create);
 // POST /movies/:id/performers (assoc movie & performer)
 router.post('/animes/:id/creators', ensureLoggedIn, creatorsCtrl.addToCast);
 
