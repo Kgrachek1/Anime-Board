@@ -9,6 +9,10 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 50px 1fr;
+  background-color:rgb(233, 231, 228);
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-evenly;
   grid-template-areas: 
     "nav"
     "main"
@@ -16,11 +20,11 @@ body {
 
 body > nav {
   grid-area: nav;
-  background-color: #c2c2b8;
+  background-color: #4020f7;
   display: flex;
-  justify-content: space-between;
+  box-sizing:content-box;
+  justify-content: top;
   align-items: center;
-  padding: 0 20px 0 30px;
 }
 
 nav > img {
@@ -35,11 +39,17 @@ p {
   text-align: center;
 }
 
-nav {
-  display:flex;
-  justify-content: space-between;
-}
+
+
 button {
   background-color: cyan;
  
+}
+
+#anime {
+  display:inline-flex;
+  justify-content: space-around;
+  height: 30%;
+  width: 90%;
+  
 }
