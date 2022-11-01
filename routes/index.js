@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
   res.redirect('/animes');
 });
 
+
 router.get('/auth/google', passport.authenticate(
   // Which passport strategy is being used?
   'google',

@@ -38,7 +38,7 @@ const animeSchema = new Schema({
   },
   cast: [{
     type: Schema.Types.ObjectId,
-    ref: 'Performer'
+    ref: 'Anime'
   }],
   nowShowing: {
     type: Boolean,

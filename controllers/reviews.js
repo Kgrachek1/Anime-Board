@@ -6,8 +6,7 @@ module.exports = {
 };
 
 function deleteReview(req, res, next) {
-  // Note the cool "dot" syntax to query for a movie with a
-  // review nested within an array
+ 
   Anime.findOne({
     'reviews._id': req.params.id,
     'reviews.user': req.user._id
@@ -27,12 +26,10 @@ function create(req, res) {
     req.body.user = req.user._id;
     req.body.userName = req.user.name;
     req.body.userAvatar = req.user.avatar;
-    
-    // We push an object with the data for the
-    // review subdoc into Mongoose arrays
+  
     anime.reviews.push(req.body);
     anime.save(function(err) {
-      // Step 5: Respond with a redirect because we've mutated data
+      
       res.redirect(`/animes/${anime._id}`);
     });
   });
