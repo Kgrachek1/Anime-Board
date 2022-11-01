@@ -1,0 +1,14 @@
+nav {
+  color:aliceblue  
+}
+body {
+    background-image: url(https://i.imgur.com/FmPruB6.png);
+}
+
+button {
+ color:black;
+}
+
+button > nav {
+    color:black;
+}

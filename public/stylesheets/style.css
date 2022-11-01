@@ -1,40 +1,14 @@
 * {
   box-sizing: border-box;
   font-family: Helvetica;
-  color: #424748;
+  color: #000000;
 }
 
-.kevins-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  justify-content: stretch;
-}
 
-.kevins-row > * {
-  flex-basis: 20rem;
-  flex-shrink: 0;
-}
-
-.kevins-row .card {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.kevins-row .card > .card-content {
-  flex-grow: 1;
-}
-
-.kevins-row .card > .card-image {
-  flex-basis: 25rem;
-  flex-shrink: 0;
-  overflow-y: hidden;
-  background-color: grey;
-}
 
 body {
+  text-align: center;
   margin: 0;
-  overflow-x: hidden;
+  background-image: url(https://i.imgur.com/FmPruB6.png);
 }
+

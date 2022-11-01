@@ -1,17 +1,24 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
         <html>
-            <head><!-- Compiled and minified CSS -->
-              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-              <!-- Compiled and minified JavaScript -->
+            <head>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
               <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>         
                 <meta charset="UTF-8">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel='stylesheet' href='/stylesheets/style.css'/>
+                <link rel='stylesheet' href='/stylesheets/new.css'/>
                 <title>Post an Anime</title>
                 <nav>
                     <a href='/animes'>Return to Leaf Village</a>
                     <button><a href="/logout">Log Out</a></button>
                 </nav>
+                <body> 
+                    <form id="form"> 
+                        <input type="search" id="query" name="q" placeholder="Search Animes">
+                        <button>Search</button>
+                    </form>
+                    <form action="review">
+                        <textarea name="post" id="anime-review" cols="30" rows="10"></textarea>
+                    </form>
+                </body>
         </head>
-    
