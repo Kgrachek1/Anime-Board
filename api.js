@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var api = require('./api.js')
+
 
 const ROOT_URL = 'https://api.jikan.moe/v4/anime';
 
@@ -8,7 +8,7 @@ const ROOT_URL = 'https://api.jikan.moe/v4/anime';
 router.get('/', async function(req, res, next) {
   const anime = req.query.anime;
   if (!anime) return res.render('new', { animeData: null });
-  const animeData = await fetch(`${ROOT_URL}/anime/${anime}`)
+  const animeData = await fetch(`${ROOT_URL}/anime/1/${anime}`)
     .then(res => res.json());
   animeData.anime = await fetch(animeData.ROOT_URL)
     .then(res => res.json());

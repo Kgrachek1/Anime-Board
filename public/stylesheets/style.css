@@ -3,12 +3,27 @@
   font-family: Helvetica;
   color: #000000;
 }
-
+nav {
+  display:flex;
+  justify-content: space-evenly;
+}
 
 
 body {
   text-align: center;
   margin: 0;
   background-image: url(https://i.imgur.com/FmPruB6.png);
+  align-items: center;
 }
-
+h1 {
+  font-size: 40px;
+  background: -webkit-linear-gradient(rgb(19, 86, 242), rgb(75, 28, 245));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h3 {
+  font-size: 30px;
+  background: -webkit-linear-gradient(rgb(97, 7, 253), rgb(39, 10, 231));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
         <html>
             <head>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+                
               <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>         
                 <meta charset="UTF-8">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,29 @@
                 <link rel='stylesheet' href='/stylesheets/new.css'/>
                 <title>Post an Anime</title>
                 <nav>
-                    <a href='/animes'>Return to Leaf Village</a>
+                    <a href='/animes'>Home</a>
                     <button><a href="/logout">Log Out</a></button>
                 </nav>
+                <form id="form"> 
+                    <input type="search" id="query" name="q" placeholder="Search Animes">
+                    <button>Search</button>
+                </form>
                 <body> 
-                    <form id="form"> 
-                        <input type="search" id="query" name="q" placeholder="Search Animes">
-                        <button>Search</button>
-                    </form>
+                    <img src="https://cdn.myanimelist.net/images/anime/1764/126627.jpg" alt="">
+                    <section>
+                        
+                       <article>
+                        <ul>
+                            <ol>Producers: TV Tokyo, Aniplex, Dentsu</ol>
+                            <ol>Currently Airing: Yes</ol>
+                            <ol>Air Date: Oct 11, 2022</ol>
+                            <ol>Demographic: Shounen</ol>
+                            <ol>Duration: 24 min</ol>
+                        </ul>
+
+                       </article>
+                        
+                    </section>
                     <form action="review">
                         <textarea name="post" id="anime-review" cols="30" rows="10"></textarea>
                     </form>

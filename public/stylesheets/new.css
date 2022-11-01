@@ -1,14 +1,23 @@
 nav {
-  color:aliceblue  
+  display:flex;
+  justify-content: space-between;
 }
 body {
     background-image: url(https://i.imgur.com/FmPruB6.png);
+    display:grid;
+    justify-content: center;
 }
 
-button {
- color:black;
+h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-button > nav {
-    color:black;
+h3 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
