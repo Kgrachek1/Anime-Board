@@ -9,15 +9,17 @@ body {
 }
 
 h1 {
-  font-size: 72px;
-  background: -webkit-linear-gradient(#eee, #333);
+  font-size: 60px;
+  background: -webkit-linear-gradient(rgb(1, 34, 250), rgb(139, 6, 247));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  justify-content: center;
+  text-align: center;
 }
 
 h3 {
-  font-size: 72px;
-  background: -webkit-linear-gradient(#eee, #333);
+  font-size: 35px;
+  background: -webkit-linear-gradient(rgb(239, 7, 208), rgb(10, 14, 244));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

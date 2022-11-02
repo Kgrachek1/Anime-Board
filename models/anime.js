@@ -38,7 +38,7 @@ const animeSchema = new Schema({
   },
   cast: [{
     type: Schema.Types.ObjectId,
-    ref: 'Anime'
+    ref: 'anime'
   }],
   nowShowing: {
     type: Boolean,
@@ -48,5 +48,7 @@ const animeSchema = new Schema({
 }, {
   timestamps: true
 });
+
+
 
 module.exports = mongoose.model('Anime', animeSchema);
