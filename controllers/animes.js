@@ -20,17 +20,18 @@ function index(req, res) {
 }
 
 function show(req, res) {
-    Anime.findOne({apiId:req.params.id}, function  (err, anime) {
-        
-            
-        
-            res.render('animes/show', {
-                title: 'Anime Detail',
-                anime,
-              
-            });
-        
-          })
+    Anime.findOne({
+        apiId: req.params.id
+    }, function (err, anime) {
+
+
+        res.render('animes/show', {
+            title: 'Anime Detail',
+            anime
+
+        });
+
+    })
 }
 
 function newAnime(req, res) {
@@ -46,11 +47,13 @@ function create(req, res) { // Convert nowShowing's checkbox of nothing or "on" 
         req.body.cast = req.body.cast.split(/\s*,\s*/);
     
 
+
     // Delete empty properties on req.body for defaults to happen
     for (let key in req.body) {
         if (req.body[key] === '') 
             delete req.body[key];
         
+
 
     }
     const anime = new Anime(req.body);
@@ -68,21 +71,11 @@ function create(req, res) { // Convert nowShowing's checkbox of nothing or "on" 
 
 const ROOT_URL = 'https://api.jikan.moe/v4/anime';
 
-// const ROOT_URL = 'https://jikan1.p.rapidapi.com/anime/16498/episodes';
-
-const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
-        'X-RapidAPI-Host': 'jikan1.p.rapidapi.com'
-
-    }
-}
 
 async function getAnime(req, res) {
-    const animeData = await fetch(`${ROOT_URL}?q=${req.query.anime}`)
-      .then(res => res.json())
-      .then(data => data.data)
+    const animeData = await fetch(`${ROOT_URL}?q=${
+        req.query.anime
+    }`).then(res => res.json()).then(data => data.data)
     const anime = formatanimeData(animeData)
     console.log(anime)
     Anime.find({}, function (err, animes) {
@@ -99,20 +92,6 @@ async function getAnime(req, res) {
     })
 }
 
-
-// .then(json => console.log(json))
-// .catch(err => console.error('error:' + err))
-
-// router.get('/', async function(req, res, next) {
-// const anime = req.query.anime;
-// if (!anime) return res.render('creators/new', { animeData: null });
-// const animeData = await fetch(`${ROOT_URL}/anime=${anime}`)
-// .then(res => res.json());
-// animeData.anime = await fetch(animeData.html_url)
-// .then(res => res.json());
-// res.render('creators/new', { animeData });
-
-// });
 function formatanimeData(animeData) {
     return animeData.map(a => ({
         title: a.title,
