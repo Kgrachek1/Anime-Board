@@ -44,7 +44,13 @@
                         <h3>anime:</h3>
                         <div class="list-group">
                           <% anime.forEach(function(anime) { %>
-                            <%= anime.title %>
+                           <a href="/animes/<%= anime.apiId %>"> 
+                            <div id="aniImg">
+                            <img src="<%= anime.animeImg %>" target="_blank"
+                              class="list-group-item">
+                            <%= anime.title %> 
+                          </div>
+                          </a>
                             <img src="<%= anime.animeImg %>" target="_blank"
                               class="list-group-item">
                           
