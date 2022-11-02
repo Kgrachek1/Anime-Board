@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+}
+body {
+  background-color:rgb(65, 8, 65) ;  
+
+}
+p {
+    color:white;
+    overflow: hidden;
+}
+button {
+    color:white;
+    background-color: black;
+}
+div#form {
+    display:flex;
+    justify-content: flex-end;
+}

@@ -10,6 +10,6 @@ router.get('/new', ensureLoggedIn, animeCtrl.new);
 
 router.get('/:id', animeCtrl.show);
 
-router.post('/', ensureLoggedIn, animeCtrl.create);
+;
 
 module.exports = router;

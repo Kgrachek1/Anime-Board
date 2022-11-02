@@ -6,7 +6,6 @@ module.exports = {
     index,
     show,
     new: newAnime,
-    create,
     getAnime
 };
 
@@ -22,52 +21,44 @@ function index(req, res) {
 function show(req, res) {
     Anime.findOne({
         apiId: req.params.id
-    }, function (err, anime) {
+    }, function (err, an) {
 
 
         res.render('animes/show', {
-            title: 'Anime Detail',
-            anime
+            title:'Anime',
+            an
 
         });
-
+     
     })
 }
 
 function newAnime(req, res) {
-    res.render('creators/new', {title: 'Add an Anime'});
+    res.render('animes/new', {title: 'Add an Anime'});
 }
 
-function create(req, res) { // Convert nowShowing's checkbox of nothing or "on" to boolean
-    req.body.nowShowing = !! req.body.nowShowing;
+//function create(req, res) { 
+    //req.body.nowShowing = !! req.body.nowShowing;
     // Remove leading/trailing spaces
-    req.body.cast = req.body.cast.trim();
+   // req.body.cast = req.body.cast.trim();
     // Split if it's not an empty string
-    if (req.body.cast) 
-        req.body.cast = req.body.cast.split(/\s*,\s*/);
-    
-
-
-    // Delete empty properties on req.body for defaults to happen
-    for (let key in req.body) {
-        if (req.body[key] === '') 
-            delete req.body[key];
+   // if (req.body.cast) 
+      //  req.body.cast = req.body.cast.split(/\s*,\s*/);
+    //for (let key in req.body) {
+    //    if (req.body[key] === '') 
+      //      delete req.body[key];
         
-
-
-    }
-    const anime = new Anime(req.body);
-    anime.save(function (err) {
-        if (err) 
-            return res.redirect('/animes/new');
+    //}
+    // const anime = new Anime(req.body);
+    // anime.save(function (err) {
+    //     if (err) 
+    //         return res.redirect('/animes/new');
         
+    //     res.redirect(`/animes/${
+    //         anime._id
+    //     }`);
+    // });
 
-
-        res.redirect(`/animes/${
-            anime._id
-        }`);
-    });
-}
 
 const ROOT_URL = 'https://api.jikan.moe/v4/anime';
 
@@ -75,20 +66,21 @@ const ROOT_URL = 'https://api.jikan.moe/v4/anime';
 async function getAnime(req, res) {
     const animeData = await fetch(`${ROOT_URL}?q=${
         req.query.anime
-    }`).then(res => res.json()).then(data => data.data)
+    }`).then(res => res.json())
+    .then(data => data.data)
     const anime = formatanimeData(animeData)
     console.log(anime)
     Anime.find({}, function (err, animes) {
         anime.forEach(a => {
             let ani = Anime.findOne({apiId: a.anime})
-            if (! ani) {
+            if (!ani) {
                 const newAnime = new Anime(a)
                 newAnime.save(function (err) {})
 
 
             }
         })
-        res.render('creators/new', {anime})
+        res.render('animes/new', {anime})
     })
 }
 

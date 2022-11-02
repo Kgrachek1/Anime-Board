@@ -19,7 +19,7 @@ function addToCast(req, res) {
 function create(req, res) {
   req.body.created += 'T00:00';
   Creator.create(req.body, function (err, creators) {
-    res.redirect('/creators/new');
+    res.redirect('/animes/new');
   });
 }
 

@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel='stylesheet' href='/stylesheets/show.css' />
 </head>
+   
+<nav>
+   <button><a href="/animes">Home</a></button>
+</nav>
 <body>
-    <%= anime.title %>
-    This is the details page
+    
+            <h3 class="text-center text-info">
+              Review this Anime
+            </h3>
+          
+        </div> 
+
+    <h1> 
+        <%= an.title %> 
+    </h1>
+    <img src="<%= an.animeImg %>">
+    <div id="form">
+     <form action="/animes/<%= an.aniId %>show" method='POST'>
+         <article> Aired:<%= an.releaseYear %> </article>
+         <p>Submit your review of this anime below!</p>
+         <textarea class="review" id="reviews" cols="45" rows="10"></textarea>
+         <button type="submit">Post</button>
+         <button type="submit">Delete</button>
+         <button action="">Edit</button>
+         <p><%= an.animeDes %> </p>
+     </form>
+    </div>
+    <div>
+        <% an.reviews.forEach(function(a){ %>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><%= a.content %></td>
+                        <td><%= a.rating %></td>
+                        <td><%= a.user %></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <% }) %>
+    </div>
 </body>
 </html>
