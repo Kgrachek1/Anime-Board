@@ -1,7 +1,6 @@
 <!DOCTYPE html>
         <html>
-            <% let animeData; %>
-            <% let anime; %>
+       
             <head>
              
               <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>         
@@ -19,9 +18,9 @@
                 <h1 class="jumbotron text-center">Animes</h1>
                 <div class="row">
                   <div class="col-xs-6 col-xs-offset-6">
-                    <form action="" method="GET">
+                    <form action="/animes/search" method="GET">
                       <div class="input-group">
-                        <input type="text" name="Anime" class="form-control"
+                        <input type="text" name="anime" class="form-control"
                           placeholder="Enter an Anime">
                         <span class="input-group-btn">
                           <button class="search" type="submit">Go!</button>
@@ -33,21 +32,22 @@
               
                 <hr>
                 <div class="row col-xs-8 col-xs-offset-2">
-                  <% if (animeData) { %>
+                  <% if (anime && anime) { %>
                     <div class="panel panel-default">
                       <div class="panel-heading text-center">
-                        <img src="<%= animeData.html_url %>"
+                        <img src="<%= anime.html_url %>"
                           class="img-circle" width="300">
-                        <h2><%= animeData.anime %></h2>
+                        <h2><%= anime.title %></h2>
+                       
                       </div>
                       <div class="panel-body">
                         <h3>anime:</h3>
                         <div class="list-group">
-                          <% animeData.anime.forEach(function(anime) { %>
-                            <%= anime.name %>
-                            <a href="<%= anime.html_url %>" target="_blank"
+                          <% anime.forEach(function(anime) { %>
+                            <%= anime.title %>
+                            <img src="<%= anime.animeImg %>" target="_blank"
                               class="list-group-item">
-                            </a>
+                          
                           <% }); %>
                         </div>
                       </div>

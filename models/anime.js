@@ -29,17 +29,22 @@ const animeSchema = new Schema({
     type: String,
     required: true
   },
-  releaseYear: {
+  apiId:{
     type: Number,
-    default: function() {
-      return new Date().getFullYear();
-    },
-    min: 1981
   },
-  cast: [{
-    type: Schema.Types.ObjectId,
-    ref: 'anime'
-  }],
+  animeDes: {
+    type: String,
+  },
+  animeImg:{
+    type: String,
+  },
+ 
+  releaseYear: {
+    type: String, 
+    },
+    
+
+  
   nowShowing: {
     type: Boolean,
     default: false
