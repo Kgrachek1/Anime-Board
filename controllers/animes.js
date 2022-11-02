@@ -16,13 +16,13 @@ function index(req, res) {
 
 function show(req, res) {
   Anime.findById(req.params.id)
-    .populate('cast')
+    .populate('anime')
     .exec(function(err, anime) {
       Creator.find(
         {_id: {$nin: anime.cast}},
         function(err, creators) {
           console.log(creators);
-          res.render('animes/show', {
+          res.render('animes/creator', {
             title: 'Anime Detail',
             anime,
             creators
@@ -33,7 +33,7 @@ function show(req, res) {
 }
 
 function newAnime(req, res) {
-  res.render('animes/new', { title: 'Add an Anime' });
+  res.render('creators/new', { title: 'Add an Anime' });
 }
 
 function create(req, res) {

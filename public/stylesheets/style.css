@@ -16,11 +16,9 @@ body {
   align-items: center;
 }
 h1 {
-  font-size: 40px;
-  background: -webkit-linear-gradient(rgb(19, 86, 242), rgb(75, 28, 245));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 40px; 
 }
+
 h3 {
   font-size: 30px;
   background: -webkit-linear-gradient(rgb(97, 7, 253), rgb(39, 10, 231));
