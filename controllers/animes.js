@@ -46,7 +46,6 @@ async function getAnime(req, res) {
     }`).then(res => res.json())
     .then(data => data.data)
     const anime = formatanimeData(animeData)
-    console.log(anime)
     Anime.find({}, function (err, animes) {
         anime.forEach(a => {
             let ani = Anime.findOne({apiId: a.anime})

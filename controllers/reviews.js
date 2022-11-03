@@ -8,14 +8,11 @@ module.exports = {
 };
 
 function deleteReview(req, res, next) {
- console.log(req.params.id)
   Anime.findOne({
     'reviews._id': req.params.id,
     'reviews.user': req.user._id
   }, function(err, anime) {
-    console.log(anime)
     if (!anime) return res.redirect('/animes');
-    console.log(anime)
     anime.reviews.remove(req.params.id);
     anime.save().then(function() {
       res.redirect(`/animes/${anime.apiId}`);
@@ -28,7 +25,6 @@ function deleteReview(req, res, next) {
 function create(req, res) {
   Anime.findOne({_id:req.params.id}, function(err, anime) {
     req.body.user = req.user._id;
-    console.log(req.body)
     req.body.userName = req.user.name;
     anime.reviews.push(req.body)
     anime.save(function(err) {
