@@ -4,18 +4,36 @@ nav {
     background-color: blueviolet;
 }
 body {
-  background-color:rgb(65, 8, 65) ;  
+    text-align: center;
+    margin: 0;
+    color:rgb(171, 242, 245);
+  background:no-repeat #0103FF;
+  background: -webkit-linear-gradient(top left, #0103FF, #8808D9);
+  background: -moz-linear-gradient(top left, #e101ff, #4708d9);
+  background: linear-gradient(to bottom right, #0103FF, #8808D9);
+    align-items: center;
+  }
+  h1 {
+    font-size: 40px; 
+    background: -webkit-linear-gradient(rgb(187, 253, 7), rgb(10, 139, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  h3 {
+    font-size: 30px;
+    background: -webkit-linear-gradient(rgb(187, 253, 7), rgb(10, 139, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  button  {
+    color:black;
+    background: -webkit-linear-gradient(rgb(187, 253, 7), rgb(10, 139, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-}
-p {
-    color:white;
-    overflow: hidden;
-}
-button {
-    color:white;
-    background-color: black;
-}
-div#form {
-    display:flex;
-    justify-content: flex-end;
-}
+  input {
+    color:rgb(1, 1, 1);
+  }

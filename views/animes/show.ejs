@@ -14,9 +14,9 @@
 </nav>
 <body>
     
-            <h3 class="text-center text-info">
+            <h1 class="text-center text-info">
               Review this Anime
-            </h3>
+            </h1>
           
         </div> 
 
@@ -33,7 +33,7 @@
      <form  action="/animes/<%= an._id %>/reviews" method='POST'>
          <article> Aired:<%= an.releaseYear %> </article>
          <p>Submit your review of this anime below!</p>
-         <textarea name ="content" class="review" id="reviews" cols="45" rows="10"></textarea>
+         <textarea name ="content" class="review" id="reviews" cols="45" rows="5"></textarea>
          <button type="submit">Post</button>
          
          <p><%= an.animeDes %> </p>
@@ -46,10 +46,11 @@
                   <% if (user?._id.equals(a.user)) { %>
                     <tr>
                         <form action="/reviews/<%= a._id %>?_method=PUT" method="POST">
-
-                        <td><input name="content" type="text" value="<%= a.content %>"></td>
+                            <td><label for="comment" name="comment">Comment:</label></td>
+                            <td><input name="" type="text" value="<%= a.content %>"></td>
+                           <td><label for="content" name="Comment">Rating:</label></td>
                         <td><input name="rating" type="text" value="<%= a.rating %>"></td>
-                        <td><%= a.userName %></td>
+                        <td>User:<%= a.userName %></td>
                         <td>
                         </td>
                         <td>
@@ -62,9 +63,9 @@
                     </tr>
                     <% } else { %>
                       <tr>
-                        <td><%= a.content %></td>
-                        <td><%= a.rating %></td>
-                        <td><%= a.userName %></td>
+                        <td>Post:<%= a.content %></td>
+                        <td>Rating:<%= a.rating %></td>
+                        <td>User:<%= a.userName %></td>
                     </tr>
                     <% } %>
                 </tbody>
