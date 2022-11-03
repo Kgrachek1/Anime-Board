@@ -1,6 +1,6 @@
 const fetch = require('node-fetch')
 const Anime = require('../models/anime');
-const Creator = require('../models/creator');
+
 
 module.exports = {
     index,
@@ -36,29 +36,6 @@ function show(req, res) {
 function newAnime(req, res) {
     res.render('animes/new', {title: 'Add an Anime'});
 }
-
-//function create(req, res) { 
-    //req.body.nowShowing = !! req.body.nowShowing;
-    // Remove leading/trailing spaces
-   // req.body.cast = req.body.cast.trim();
-    // Split if it's not an empty string
-   // if (req.body.cast) 
-      //  req.body.cast = req.body.cast.split(/\s*,\s*/);
-    //for (let key in req.body) {
-    //    if (req.body[key] === '') 
-      //      delete req.body[key];
-        
-    //}
-    // const anime = new Anime(req.body);
-    // anime.save(function (err) {
-    //     if (err) 
-    //         return res.redirect('/animes/new');
-        
-    //     res.redirect(`/animes/${
-    //         anime._id
-    //     }`);
-    // });
-
 
 const ROOT_URL = 'https://api.jikan.moe/v4/anime';
 
