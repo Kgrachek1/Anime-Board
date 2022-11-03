@@ -38,19 +38,12 @@ function create(req, res) {
   });
 }
 function update(req, res) {
-  // Note the cool "dot" syntax to query on the property of a subdoc
   Anime.findOne({'reviews._id': req.params.id}, function(err, anime) {
-    // Find the comment subdoc using the id method on Mongoose arrays
-    // https://mongoosejs.com/docs/subdocs.html
     const animeUp = anime.reviews.id(req.params.id);
-    // Ensure that the comment was created by the logged in user
     if (!animeUp.user.equals(req.user._id)) return res.redirect(`/anime/${anime.apiId}`);
-    // Update the text of the comment
     animeUp.content = req.body.content;
     animeUp.rating = req.body.rating;
-    // Save the updated book
     anime.save(function(err) {
-      // Redirect back to the book's show view
       res.redirect(`/animes/${anime.apiId}`);
     });
   });
