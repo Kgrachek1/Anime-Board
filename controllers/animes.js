@@ -34,7 +34,7 @@ function show(req, res) {
 }
 
 function newAnime(req, res) {
-    res.render('animes/new', {title: 'Add an Anime'});
+    res.render('animes/search', {title: 'Add an Anime'});
 }
 
 const ROOT_URL = 'https://api.jikan.moe/v4/anime';

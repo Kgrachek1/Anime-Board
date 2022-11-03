@@ -25,28 +25,50 @@
     </h1>
     <img src="<%= an.animeImg %>">
     <div id="form">
-     <form action="/animes/<%= an.aniId %>show" method='POST'>
+        <section>
+            <article>
+             
+            </article>
+        </section>
+     <form  action="/animes/<%= an._id %>/reviews" method='POST'>
          <article> Aired:<%= an.releaseYear %> </article>
          <p>Submit your review of this anime below!</p>
-         <textarea class="review" id="reviews" cols="45" rows="10"></textarea>
+         <textarea name ="content" class="review" id="reviews" cols="45" rows="10"></textarea>
          <button type="submit">Post</button>
-         <button type="submit">Delete</button>
-         <button action="">Edit</button>
+         
          <p><%= an.animeDes %> </p>
-     </form>
+        </form>
     </div>
     <div>
         <% an.reviews.forEach(function(a){ %>
             <table>
                 <tbody>
+                  <% if (user?._id.equals(a.user)) { %>
                     <tr>
+                        <form action="/reviews/<%= a._id %>?_method=PUT" method="POST">
+
+                        <td><input name="content" type="text" value="<%= a.content %>"></td>
+                        <td><input name="rating" type="text" value="<%= a.rating %>"></td>
+                        <td><%= a.userName %></td>
+                        <td>
+                        </td>
+                        <td>
+                            <button type="submit">Update</button>
+                        </td>
+                    </form>
+                    <form action="/reviews/<%= a._id %>?_method=DELETE" method="POST">
+                        <button type="submit">Delete</button>
+                    </form>
+                    </tr>
+                    <% } else { %>
+                      <tr>
                         <td><%= a.content %></td>
                         <td><%= a.rating %></td>
-                        <td><%= a.user %></td>
+                        <td><%= a.userName %></td>
                     </tr>
+                    <% } %>
                 </tbody>
             </table>
-
             <% }) %>
     </div>
 </body>
