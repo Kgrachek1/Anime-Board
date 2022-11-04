@@ -1,6 +1,6 @@
 
-<h1><span style="color:purple">AnimBoard</h1>
-<p>Spaceman is a word guessing game, in order to save spaceman from certain 💀doom⚰️ you must correctly guess the hidden word.</p>
+<h1><span style="color:purple">AnimeBoard</h1>
+<p>AnimeBoard is a place where you can search and anime and leave a comment or review about your experience viewing or reading about this anime!</p>
 <br>
 <h1>📸 <span style="color:yellow">Screenshots of AnimeBoard</h1>
 <div>
@@ -10,12 +10,12 @@
 <h1><span style="color:yellow">Technologies Used</h1>
 
 
-<img src="images/faviconjs.png"> <b>JavaScript</b><br>
-<img src="images/faviconcss.png">
+ <b>JavaScript</b><br>
+<img src="https://i.imgur.com/lxjGmur.png">
 <b>CSS</b><br>
-<img src="images/faviconh.png">
+
 <b>HTML</b><br>
-<img src="images/favicongh.png">
+
 <b>GitHub
 
 <br>
