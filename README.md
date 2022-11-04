@@ -4,7 +4,7 @@
 <br>
 <hr>
 <h1>🖼 Wireframes and ERD</h1>
-[Planning for AnimeBoard](https://trello.com/b/2ZI3qXhY/anime-board/)
+[Planning for AnimeBoard](https://trello.com/b/2ZI3qXhY/anime-board)
 <br>
 <hr>
 <h1>📸 <span style="color:yellow">Screenshots of AnimeBoard</h1>
@@ -39,7 +39,7 @@
 
 Before you begin your search navigate to the "Log In" button at the top of your screen, after successfully authenticating go ahead and click the button "Search Anime", once on the new page enter an anime of your choosing in the search bar and let it rip!
 <br>
-Deployed Link: [AnimeBoard](https://animeboard.herokuapp.com/animes/)
+Deployed Link - [AnimeBoard](https://animeboard.herokuapp.com/animes/)
 
 <br>
 <h1>🧊<span style="color:cyan">Next Steps🧊</h1>
