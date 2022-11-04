@@ -4,11 +4,7 @@
 <br>
 <hr>
 <h1>🖼 Wireframes and ERD</h1>
-<img src="https://i.imgur.com/HDSW8S2.png" style="width:250px" style="height:250px"><br>
-
-<img src="https://i.imgur.com/PSucv0N.png" style="width:250px" style="height:250px"><br>
-
-<img src="https://i.imgur.com/YqYPHHZ.png" style="width:250px" style="height:250px">
+[Planning for AnimeBoard](https://trello.com/b/2ZI3qXhY/anime-board)
 <br>
 <hr>
 <h1>📸 <span style="color:yellow">Screenshots of AnimeBoard</h1>
