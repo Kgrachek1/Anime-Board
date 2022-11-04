@@ -3,7 +3,7 @@
 <p>AnimeBoard is a website where you can 🔎search and review animes that you have seen and discover new animes!🔍</p>
 <br>
 <hr>
-<h1>Wireframes and ERD</h1>
+<h1>🖼 Wireframes and ERD</h1>
 <img src="https://i.imgur.com/HDSW8S2.png" style="width:250px" style="height:250px"><br>
 
 <img src="https://i.imgur.com/PSucv0N.png" style="width:250px" style="height:250px"><br>
@@ -20,25 +20,25 @@
 <img src="https://i.imgur.com/deqOFuN.png" style="width:250px" style="height:250px">
 <br>
 </div>
-<h1><span style="color:yellow">⚙️Technologies Used</h1>
+<h1><span style="color:yellow">⚙️ Technologies Used</h1>
 
 
-<img src="https://i.imgur.com/fA0yelG.png" style="width:45px" style="height:45px"><b>:JavaScript</b><br>
+<img src="https://i.imgur.com/fA0yelG.png" style="width:25px" style="height:25px"><b>JavaScript</b><br>
 
-<img src="https://i.imgur.com/lxjGmur.png" style="width:45px" style="height:45px"><b>:CSS</b><br>
+<img src="https://i.imgur.com/lxjGmur.png" style="width:25px" style="height:25px"><b>CSS</b><br>
 
-<img src="https://i.imgur.com/V1IYuBW.png" style="width:45px" style="height:45px"><b>:HTML5</b><br>
+<img src="https://i.imgur.com/V1IYuBW.png" style="width:25px" style="height:25px"><b>HTML5</b><br>
 
-<img src="https://i.imgur.com/uz37Plp.png" style="width:45px" style="height:45px"><b>:GitHub</b><br>
+<img src="https://i.imgur.com/uz37Plp.png" style="width:25px" style="height:25px"><b>GitHub</b><br>
 
-<img src="https://i.imgur.com/KvrS0L4.png" style="width:45px" style="height:45px"><b>:Express.JS</b><br>
+<img src="https://i.imgur.com/KvrS0L4.png" style="width:25px" style="height:25px"><b>Express.JS</b><br>
 
-<img src="https://i.imgur.com/I7t25UC.png" style="width:45px" style="height:45px"><b>:MongoDB</b><br>
+<img src="https://i.imgur.com/I7t25UC.png" style="width:25px" style="height:25px"><b>MongoDB</b><br>
 
-<img src="https://i.imgur.com/x84T4qn.jpg" style="width:45px" style="height:45px"><b>:Heroku</b><br>
+<img src="https://i.imgur.com/x84T4qn.jpg" style="width:25px" style="height:25px"><b>Heroku</b><br>
 
 <br>
-<h1><span style="color:yellow">Getting Started 🏃</h1>
+<h1><span style="color:yellow">🏃‍♂️ Getting Started 🏃</h1>
 
 
 Before you begin your search navigate to the "Log In" button at the top of your screen, after successfully authenticating go ahead and click the button "Search Anime", once on the new page enter an anime of your choosing in the search bar and let it rip!
