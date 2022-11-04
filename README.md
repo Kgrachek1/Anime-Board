@@ -8,7 +8,7 @@
 
 <img src="https://i.imgur.com/PSucv0N.png" style="width:250px" style="height:250px"><br>
 
-<img src="https://i.imgur.com/YqYPHHZ.png"style="width:250px" style="height:250px" >
+<img src="https://i.imgur.com/YqYPHHZ.png" style="width:250px" style="height:250px">
 <br>
 <hr>
 <h1>📸 <span style="color:yellow">Screenshots of AnimeBoard</h1>
