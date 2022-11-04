@@ -1,22 +1,37 @@
 
 <h1><span style="color:purple">AnimeBoard</h1>
-<p>AnimeBoard is a place where you can search and anime and leave a comment or review about your experience viewing or reading about this anime!</p>
+<p>AnimeBoard is a website where you can search and review animes that you have seen and discover new animes!</p>
 <br>
+<hr>
+<h1>Wireframes and ERD</h1>
+[Imgur](https://i.imgur.com/HDSW8S2.png)
+[Imgur](https://i.imgur.com/PSucv0N.png)
+[Imgur](https://i.imgur.com/YqYPHHZ.png)
+<br>
+<hr>
 <h1>📸 <span style="color:yellow">Screenshots of AnimeBoard</h1>
 <div>
-
+[Imgur](https://i.imgur.com/RSkL2Il.png)
+[Imgur](https://i.imgur.com/700Sthd.png)
+[Imgur](https://i.imgur.com/deqOFuN.png)
 <br>
 </div>
 <h1><span style="color:yellow">Technologies Used</h1>
 
 
- <b>JavaScript</b><br>
-<img src="https://i.imgur.com/lxjGmur.png">
-<b>CSS</b><br>
+<img src="" ><b>JavaScript</b><br>
 
-<b>HTML</b><br>
+<img src="" ><b>CSS</b><br>
 
-<b>GitHub
+<img src="" ><b>HTML5</b><br>
+
+<img src="" ><b>GitHub</b><br>
+
+<img src="" ><b>Express.JS</b><br>
+
+<img src="" ><b>MongoDB</b><br>
+
+<img src="" ><b>Heroku</b><br>
 
 <br>
 <h1><span style="color:yellow">Getting Started</h1>
