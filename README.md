@@ -23,22 +23,22 @@
 <h1><span style="color:yellow">⚙️Technologies Used</h1>
 
 
-<img src="https://i.imgur.com/fA0yelG.png" style="width:80px" style="height:80px"><b>JavaScript</b><br>
+<img src="https://i.imgur.com/fA0yelG.png" style="width:80px" style="height:80px"><b>:JavaScript</b><br>
 
-<img src="https://i.imgur.com/lxjGmur.png" style="width:80px" style="height:80px"><b>CSS</b><br>
+<img src="https://i.imgur.com/lxjGmur.png" style="width:80px" style="height:80px"><b>:CSS</b><br>
 
-<img src="https://i.imgur.com/V1IYuBW.png" style="width:80px" style="height:80px"><b>HTML5</b><br>
+<img src="https://i.imgur.com/V1IYuBW.png" style="width:80px" style="height:80px"><b>:HTML5</b><br>
 
-<img src="https://i.imgur.com/uz37Plp.png" style="width:80px" style="height:80px"><b>GitHub</b><br>
+<img src="https://i.imgur.com/uz37Plp.png" style="width:80px" style="height:80px"><b>:GitHub</b><br>
 
-<img src="https://i.imgur.com/KvrS0L4.png" style="width:80px" style="height:80px"><b>Express.JS</b><br>
+<img src="https://i.imgur.com/KvrS0L4.png" style="width:80px" style="height:80px"><b>:Express.JS</b><br>
 
-<img src="https://i.imgur.com/I7t25UC.png" style="width:80px" style="height:80px"><b>MongoDB</b><br>
+<img src="https://i.imgur.com/I7t25UC.png" style="width:80px" style="height:80px"><b>:MongoDB</b><br>
 
-<img src="https://i.imgur.com/x84T4qn.jpg" style="width:80px" style="height:80px"><b>Heroku</b><br>
+<img src="https://i.imgur.com/x84T4qn.jpg" style="width:80px" style="height:80px"><b>:Heroku</b><br>
 
 <br>
-<h1><span style="color:yellow">Getting Started</h1>
+<h1><span style="color:yellow">Getting Started 🏃</h1>
 
 
 Before you begin your search navigate to the "Log In" button at the top of your screen, after successfully authenticating go ahead and click the button "Search Anime", once on the new page enter an anime of your choosing in the search bar and let it rip!
