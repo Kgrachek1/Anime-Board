@@ -4,7 +4,7 @@
 <br>
 <hr>
 <h1>Wireframes and ERD</h1>
-<img src="https://i.imgur.com/HDSW8S2.png" ><br>
+<img src="https://i.imgur.com/HDSW8S2.png"><br>
 
 <img src="https://i.imgur.com/PSucv0N.png" ><br>
 
