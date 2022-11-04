@@ -4,9 +4,11 @@
 <br>
 <hr>
 <h1>Wireframes and ERD</h1>
-[Imgur](https://i.imgur.com/HDSW8S2.png)
-[Imgur](https://i.imgur.com/PSucv0N.png)
-[Imgur](https://i.imgur.com/YqYPHHZ.png)
+<img src="https://i.imgur.com/HDSW8S2.png" ><br>
+
+<img src="https://i.imgur.com/PSucv0N.png" ><br>
+
+<img src="https://i.imgur.com/YqYPHHZ.png" >
 <br>
 <hr>
 <h1>📸 <span style="color:yellow">Screenshots of AnimeBoard</h1>
